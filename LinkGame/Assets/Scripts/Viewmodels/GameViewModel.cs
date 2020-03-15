@@ -7,7 +7,7 @@ namespace LinkGame
 {
     public class GameViewModel : ViewModelBase
     {
-
+        
     }
 
 }
