@@ -30,12 +30,12 @@ namespace LinkGame
             //初始化UI定位器
             container.Register<IUIViewLocator>(new DefaultUIViewLocator());
             //获取当前语言信息
-            CultureInfo cultureInfo = Locale.GetCultureInfo();
+            //CultureInfo cultureInfo = Locale.GetCultureInfo();
             //获取当前本地化服务
             var localization = Localization.Current;
             //设置语言
-            localization.CultureInfo = cultureInfo;
-            localization.AddDataProvider(new DefaultDataProvider("LocalizationExamples", new XmlDocumentParser()));
+            //localization.CultureInfo = cultureInfo;
+            localization.AddDataProvider(new DefaultDataProvider("Localization", new XmlDocumentParser()));//Resource目录下的Localization文件夹
 
             container.Register<Localization>(localization);
         }

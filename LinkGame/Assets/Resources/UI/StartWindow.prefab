@@ -481,6 +481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowType: 0
+  gameNameText: {fileID: 7118693593395296593}
+  startButton: {fileID: 7118693592895454122}
+  quitButton: {fileID: 7118693592650167526}
 --- !u!225 &2401449279455832637
 CanvasGroup:
   m_ObjectHideFlags: 0

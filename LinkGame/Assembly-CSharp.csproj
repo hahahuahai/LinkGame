@@ -455,10 +455,12 @@
     <None Include="Assets\LoxodonFramework\Docs\XLua\Readme.txt" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\default\module.xml" />
     <None Include="Assets\LoxodonFramework\Tutorials\Resources\LocalizationTutorials\zh-CN\string.xml" />
+    <None Include="Assets\Resources\Localization\default\module.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\zh-CN\application.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\default\application.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\Shaders\mask.shader" />
     <None Include="Assets\LoxodonFramework\Tutorials\Resources\LocalizationTutorials\default\string.xml" />
+    <None Include="Assets\Resources\Localization\default\application.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\Shaders\FrameAnimation\Additive.shader" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\zh-CN\moudle.xml" />
     <None Include="Assets\LoxodonFramework\Readme.txt" />
