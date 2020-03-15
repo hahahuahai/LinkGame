@@ -1,5 +1,6 @@
 ﻿using Loxodon.Framework.Commands;
 using Loxodon.Framework.Contexts;
+using Loxodon.Framework.Interactivity;
 using Loxodon.Framework.Localizations;
 using Loxodon.Framework.Messaging;
 using Loxodon.Framework.Observables;
@@ -16,6 +17,8 @@ namespace LinkGame
         private SimpleCommand cancelCommand;//响应取消游戏按钮
         private Localization localization;
         private ObservableDictionary<string, string> localizationDictionary = new ObservableDictionary<string, string>();
+
+        private InteractionRequest startInteractionRequest;
 
         public ICommand StartCommand
         {
@@ -35,6 +38,14 @@ namespace LinkGame
             }
         }
 
+        public InteractionRequest StartInteractionRequest
+        {
+            get
+            {
+                return this.startInteractionRequest;
+            }
+        }
+
         public StartViewModel() : this(null)
         {
 
@@ -44,10 +55,12 @@ namespace LinkGame
         {
             ApplicationContext context = Context.GetApplicationContext();
             this.localization = context.GetService<Localization>();
-
+            startInteractionRequest = new InteractionRequest(this);
             this.startCommand = new SimpleCommand(() =>
             {
                 this.startCommand.Enabled = false;
+                startInteractionRequest.Raise();
+                this.startCommand.Enabled = true;
             });
 
             this.cancelCommand = new SimpleCommand(() =>

@@ -449,7 +449,9 @@
     <Compile Include="Assets\LoxodonFramework\Tutorials\Scripts\VariableExample.cs" />
     <Compile Include="Assets\Scripts\Gen\R.cs" />
     <Compile Include="Assets\Scripts\UILauncher.cs" />
+    <Compile Include="Assets\Scripts\Viewmodels\GameViewModel.cs" />
     <Compile Include="Assets\Scripts\Viewmodels\StartViewModel.cs" />
+    <Compile Include="Assets\Scripts\Views\GameWindow.cs" />
     <Compile Include="Assets\Scripts\Views\StartWindow.cs" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\Shaders\FrameAnimation\Default.shader" />
     <None Include="Assets\LoxodonFramework\Tutorials\Resources\application.properties.txt" />
