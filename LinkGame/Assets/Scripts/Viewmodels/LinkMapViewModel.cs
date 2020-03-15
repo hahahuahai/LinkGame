@@ -14,6 +14,8 @@ namespace LinkGame
         private int secondNumber = 0;
         private readonly SimpleCommand<int> linkButtonClickCommand;
         private InteractionRequest<int> linkButtonClickInteractionRequest;
+        
+        
 
         public SimpleCommand<int> LinkButtonClickCommand
         {
@@ -31,10 +33,6 @@ namespace LinkGame
             }
         }
 
-        public LinkMapViewModel() : this(null)
-        {
-
-        }
         public LinkMapViewModel(IMessenger messenger) : base(messenger)
         {
             this.linkButtonClickCommand = new SimpleCommand<int>(Click);

@@ -3,6 +3,7 @@ using Loxodon.Framework.Binding.Builder;
 using Loxodon.Framework.Binding.Contexts;
 using Loxodon.Framework.Contexts;
 using Loxodon.Framework.Interactivity;
+using Loxodon.Framework.Services;
 using Loxodon.Framework.Views;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,14 +21,24 @@ namespace LinkGame
         public Button LinkButton3_0;
         public Button LinkButton3_1;
 
+        private IDialogService dialogService;
+
         protected override void Awake()
         {
             Debug.Log("protected override void Awake()");
+            ApplicationContext context = Context.GetApplicationContext();
+            //获得上下文中的服务容器
+            IServiceContainer container = context.GetContainer();
+            IDialogService dialogService = new DefaultDialogService();
+            container.Register<IDialogService>(dialogService);
         }
 
         protected override void Start()
         {
-            LinkMapViewModel linkMapViewModel = new LinkMapViewModel();
+            ApplicationContext context = Context.GetApplicationContext();
+            dialogService = context.GetService<IDialogService>();
+
+            LinkMapViewModel linkMapViewModel = new LinkMapViewModel(null);
             IBindingContext bindingContext = this.BindingContext();
             bindingContext.DataContext = linkMapViewModel;
 
@@ -68,6 +79,39 @@ namespace LinkGame
                 this.LinkButton3_0.gameObject.SetActive(false);
                 this.LinkButton3_1.gameObject.SetActive(false);
             }
+            if (IsSuccess())
+            {
+                this.dialogService.ShowDialog("提示", "恭喜通关！", "确定");
+            }
+        }
+
+        private bool IsSuccess()
+        {
+            if (this.LinkButton1_0.gameObject.activeSelf)
+            {
+                return false;
+            }
+            if (this.LinkButton1_1.gameObject.activeSelf)
+            {
+                return false;
+            }
+            if (this.LinkButton2_0.gameObject.activeSelf)
+            {
+                return false;
+            }
+            if (this.LinkButton2_1.gameObject.activeSelf)
+            {
+                return false;
+            }
+            if (this.LinkButton3_0.gameObject.activeSelf)
+            {
+                return false;
+            }
+            if (this.LinkButton3_1.gameObject.activeSelf)
+            {
+                return false;
+            }
+            return true;
         }
 
 
