@@ -2,6 +2,7 @@
 using Loxodon.Framework.Contexts;
 using Loxodon.Framework.Localizations;
 using Loxodon.Framework.Messaging;
+using Loxodon.Framework.Observables;
 using Loxodon.Framework.ViewModels;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,6 +15,25 @@ namespace LinkGame
         private SimpleCommand startCommand;//响应开始游戏按钮
         private SimpleCommand cancelCommand;//响应取消游戏按钮
         private Localization localization;
+        private ObservableDictionary<string, string> localizationDictionary = new ObservableDictionary<string, string>();
+
+        public ICommand StartCommand
+        {
+            get { return this.startCommand; }
+        }
+
+        public ICommand CancelCommand
+        {
+            get { return this.cancelCommand; }
+        }
+
+        public ObservableDictionary<string,string> LocalizationDictionary
+        {
+            get
+            {
+                return this.localizationDictionary;
+            }
+        }
 
         public StartViewModel() : this(null)
         {
@@ -36,15 +56,7 @@ namespace LinkGame
             });
         }
 
-        public ICommand StartCommand
-        {
-            get { return this.startCommand; }
-        }
 
-        public ICommand CancelCommand
-        {
-            get { return this.cancelCommand; }
-        }
     }
 
 }

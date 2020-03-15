@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7118693592633345734}
   - component: {fileID: 7118693592633345728}
   - component: {fileID: 7118693592633345729}
+  - component: {fileID: 580142372}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -77,6 +78,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u5F00\u59CB\u6E38\u620F"
+--- !u!114 &580142372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7118693592633345735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6f344959b92324297d0273daa47e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: startwindow.startButton
 --- !u!1 &7118693592650167524
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +338,7 @@ GameObject:
   - component: {fileID: 7118693593395296598}
   - component: {fileID: 7118693593395296592}
   - component: {fileID: 7118693593395296593}
+  - component: {fileID: 529202768}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -390,6 +405,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Link Game
+--- !u!114 &529202768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7118693593395296599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6f344959b92324297d0273daa47e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: startwindow.gameNameText
 --- !u!1 &7118693593480616961
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +535,7 @@ GameObject:
   - component: {fileID: 7118693593697692341}
   - component: {fileID: 7118693593697692343}
   - component: {fileID: 7118693593697692340}
+  - component: {fileID: 580142374}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -573,3 +602,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u9000\u51FA"
+--- !u!114 &580142374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7118693593697692330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6f344959b92324297d0273daa47e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: startwindow.quitButton

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="startwindow.gameNameText">连连看</string>
+  <string name="startwindow.startButton">开始游戏</string>
+  <string name="startwindow.quitButton">退出游戏</string>
+</resources>

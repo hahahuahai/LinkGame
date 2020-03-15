@@ -447,6 +447,7 @@
     <Compile Include="Assets\LoxodonFramework\Tutorials\Scripts\SpriteConverter.cs" />
     <Compile Include="Assets\LoxodonFramework\Tutorials\Scripts\ThreadExecutorExample.cs" />
     <Compile Include="Assets\LoxodonFramework\Tutorials\Scripts\VariableExample.cs" />
+    <Compile Include="Assets\Scripts\Gen\R.cs" />
     <Compile Include="Assets\Scripts\UILauncher.cs" />
     <Compile Include="Assets\Scripts\Viewmodels\StartViewModel.cs" />
     <Compile Include="Assets\Scripts\Views\StartWindow.cs" />
@@ -455,7 +456,7 @@
     <None Include="Assets\LoxodonFramework\Docs\XLua\Readme.txt" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\default\module.xml" />
     <None Include="Assets\LoxodonFramework\Tutorials\Resources\LocalizationTutorials\zh-CN\string.xml" />
-    <None Include="Assets\Resources\Localization\default\module.xml" />
+    <None Include="Assets\Resources\Localization\default\window.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\zh-CN\application.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\LocalizationExamples\default\application.xml" />
     <None Include="Assets\LoxodonFramework\Examples\Resources\Shaders\mask.shader" />

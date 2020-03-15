@@ -23,6 +23,7 @@ namespace LinkGame
             BindingSet<StartWindow, StartViewModel> bindingSet = this.CreateBindingSet(startViewModel);
             bindingSet.Bind(this.startButton).For(v => v.onClick).To(vm => vm.StartCommand).OneWay();
             bindingSet.Bind(this.quitButton).For(v => v.onClick).To(vm => vm.CancelCommand).OneWay();
+            bindingSet.Bind(this.gameNameText).For(v => v.text).To(vm => vm.LocalizationDictionary["startwindow.gameNameText"]);
 
             bindingSet.Build();
         }
